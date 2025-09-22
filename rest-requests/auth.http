@@ -1,0 +1,8 @@
+### Login de usuario
+POST http://localhost:3000/api/login
+Content-Type: application/json
+
+{
+  "email": "admin@admin.com",
+  "clave": "1234"
+}

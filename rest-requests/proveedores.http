@@ -1,0 +1,35 @@
+### Listar proveedores
+GET http://localhost:3000/api/proveedores
+
+### Crear proveedor
+POST http://localhost:3000/api/proveedores
+Content-Type: application/json
+
+{
+  "nombre": "Sexto proveedor",
+  "contacto": "2364887711",
+  "email": "sexto@proveedor.com",
+  "clave": "1234",
+  "rol": "proveedor"
+}
+
+### Actualizar proveedor
+PUT http://localhost:3000/api/proveedores/1
+Content-Type: application/json
+
+{
+  "nombre": "Proveedor Actualizado",
+  "contacto": "111222333",
+  "email": "actualizado@proveedor.com"
+ }
+
+### Eliminar proveedor
+DELETE http://localhost:3000/api/proveedores/1
+
+### Cambiar clave de proveedor
+PUT http://localhost:3000/api/proveedores/1/cambiar-clave
+Content-Type: application/json
+
+{
+  "nuevaClave": "5678"
+}

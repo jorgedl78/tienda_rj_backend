@@ -1,0 +1,34 @@
+### Listar prendas
+GET http://localhost:3000/api/prendas
+
+### Crear prenda
+POST http://localhost:3000/api/prendas
+Content-Type: application/json
+
+{
+  "descripcion": "Campera de jean",
+  "talla": "M",
+  "idProveedor": 1,
+  "idTipo": 2,
+  "idEstado": 1,
+  "precio": 15000,
+  "disponible": true
+}
+
+### Actualizar prenda
+PUT http://localhost:3000/api/prendas/1
+Content-Type: application/json
+
+{
+  "descripcion": "Campera de jean negra",
+  "talla": "L",
+  "precio": 22000,
+  "disponible": true,
+  "idProveedor": 1,
+  "idEstado": 1,
+  "idTipo": 2
+}
+
+### Eliminar una prenda
+DELETE http://localhost:3000/api/prendas/1
+
